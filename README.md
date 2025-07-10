@@ -155,28 +155,7 @@ The script now includes interactive directory configuration when you run it:
 - **Finder integration** opens native macOS dialogs for easy selection
 - **Configuration summary** shows all settings before proceeding
 
-### Manual Configuration
 
-You can also edit the script to customise paths:
-
-```bash
-# Configuration
-<<<<<<< HEAD
-MUSIC_LIBRARY_PATH="${HOME}/Music/organised" # Change this to where you'd like it to output
-CHECK_PATH="${HOME}/Music/Organized/!CHECK" # This will have files that it couldn't find data for
-UNSURE_PATH="${CHECK_PATH}/Unsure" # This will have files that it tentatively applied from MusicBrainz
-FAILED_PATH="${CHECK_PATH}/Failed"
-RATE_LIMIT_DELAY=1  # MusicBrainz requires 1 second between requests
-USER_AGENT="flacfolders/1.0 (https://github.com/colby-int/flac-folders)" # Change this
-=======
-MUSIC_LIBRARY_PATH="/Select/PathTo/Music" # Change this to where you'd like it to output
-CHECK_PATH="/Select/PathTo/Music/!CHECK" # This will have files that it couldn't find data for
-UNSURE_PATH="${CHECK_PATH}/Unsure" # This will have files that it tentatively applied from MusicBrainz
-FAILED_PATH="${CHECK_PATH}/Failed"
-RATE_LIMIT_DELAY=1  # MusicBrainz requires 1 second between requests
-USER_AGENT="flac-folders/1.0 (https://github.com/colby-int/flac-folders)" 
->>>>>>> 4380d50 (1107 - 1.1.0 - add init tools & clean readme)
-```
 
 ### File Processing Features
 
